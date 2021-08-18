@@ -56,5 +56,24 @@ public class ShapesTest {
         assertEquals(expectedarea,calculatedarea);
     }
 
+    @Test
+    void toCalculatePerimeterofSquarewithPositiveDimensions()
+    {
+        Square squareObj = new Square(2);
+        int expectedperimeter = 8;
+        int calculatedperimeter = squareObj.perimeter();
+        assertEquals(expectedperimeter,calculatedperimeter);
+    }
+
+    @Test
+    void toCalculatePerimeterOfSquareWithNegativeDimensions()
+    {
+        Square squareObj = new Square(-2);
+        int expectedperimeter = -8;
+        int calculatedperimeter = squareObj.perimeter();
+        assertEquals(expectedperimeter,calculatedperimeter);
+    }
+
+
 
 }
