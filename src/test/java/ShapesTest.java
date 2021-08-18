@@ -20,4 +20,23 @@ public class ShapesTest {
         assertEquals(expectedarea, calculatedarea);
     }
 
+    @Test
+    void toCalculatePerimeterOfaRectangleWithPositiveDimensions()
+    {
+        Shapes rectangleObj = new Rectangle(2, 4);
+        int expectedperimeter = 12;
+        int calculatedperimeter = rectangleObj.perimeter();
+        assertEquals(expectedperimeter, calculatedperimeter);
+
+    }
+
+    @Test
+    void toCalculatePerimeterOfaRectangleWithNegativeDimensions() {
+        Rectangle rectangleObj = new Rectangle(-2, -4);
+        int expectedperimeter = -12;
+        int calculatedperimeter = rectangleObj.perimeter();
+        assertEquals(expectedperimeter, calculatedperimeter);
+    }
+
+
 }

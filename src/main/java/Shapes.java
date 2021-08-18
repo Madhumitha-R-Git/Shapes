@@ -5,6 +5,7 @@ public class Shapes {
     {
         return length*breadth;
     }
+    int perimeter() {return 2*(length+breadth); }
 
 }
 class Rectangle extends Shapes
