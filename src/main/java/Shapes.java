@@ -8,6 +8,7 @@ public class Shapes {
     int perimeter() {return 2*(length+breadth); }
 
 }
+
 class Rectangle extends Shapes
 {
 
@@ -18,3 +19,15 @@ class Rectangle extends Shapes
     }
 
 }
+
+class Square extends Shapes
+{
+
+    Square(int length)
+    {
+        this.length = length;
+        this.breadth = length;
+    }
+
+}
+
